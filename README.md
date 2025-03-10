@@ -42,8 +42,8 @@ git clone https://github.com/JuanPablo70/Docker.git
     docker container run -d -p [host-port]:[container-port] [dockerhub-repository]/[project]:[tag]
     ```
     
-> [!NOTE]
-> Once a Docker image is created, irrespective of what the Docker image contains, it is ran the same way.
+  > [!NOTE]
+  > Once a Docker image is created, irrespective of what the Docker image contains, it is ran the same way.
     
   + To list the containers the command is:
     ```
@@ -80,8 +80,8 @@ git clone https://github.com/JuanPablo70/Docker.git
 + **Docker Terminology**
   + **Docker Image:** A package representing specific version of tour application (or software). It contains everything the app needs (OS, software, code, dependencies).
   + **Docker Registry:** A place to store Docker images.
-> [!NOTE]
-> Docker Hub is a registry to host Docker images
+  > [!NOTE]
+  > Docker Hub is a registry to host Docker images
   + **Doker Repository:** Docker images for a specific app (tags are used to differentiate different images).
   + **Docker Container:** Runtime instance of a Docker image.
   + **Dockerfile:** File with instructions to create a Docker image.
@@ -131,8 +131,8 @@ git clone https://github.com/JuanPablo70/Docker.git
       + Instead of copying the jar file from the local machine, it is copying it from the build stage to the app.jar file
       + It as the same command to run the jar file
 
-> [!TIP]
-> It is recommended to use two different images because the Maven image might contain a lot of other things than just the open JDK. And when the container is running, it's better to have a small container image ad possible. 
+    > [!TIP]
+    > It is recommended to use two different images because the Maven image might contain a lot of other things than just the open JDK. And when the container is running, it's better to have a small container image ad possible. 
       
   + Dockerfile 3 - Improve Layer Caching
     ```
@@ -165,8 +165,8 @@ git clone https://github.com/JuanPablo70/Docker.git
   docker build -t [dockerhub-repository]/[project-name]:[tag] .
   ```
 
-> [!IMPORTANT]
-> Do not forget to replace the repository, project name and tag
+  > [!IMPORTANT]
+  > Do not forget to replace the repository, project name and tag
 
   To see the list of Docker images, execute the following command:
   ```
